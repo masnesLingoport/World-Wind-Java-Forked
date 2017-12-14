@@ -143,17 +143,6 @@ public abstract class AbstractDataRasterReader extends AVListImpl implements Dat
         StringBuilder sb = new StringBuilder();
 
         Object o = (params != null) ? params.getValue(AVKey.WIDTH) : null;
-        if (o == null || !(o instanceof Integer))
-            sb.append(sb.length() > 0 ? ", " : "").append(Logging.getMessage("WorldFile.NoSizeSpecified", source));
-
-        o = (params != null) ? params.getValue(AVKey.HEIGHT) : null;
-        if (o == null || !(o instanceof Integer))
-            sb.append(sb.length() > 0 ? ", " : "").append(Logging.getMessage("WorldFile.NoSizeSpecified", source));
-
-        o = (params != null) ? params.getValue(AVKey.SECTOR) : null;
-        if (o == null || !(o instanceof Sector))
-            sb.append(sb.length() > 0 ? ", " : "").append(Logging.getMessage("WorldFile.NoSectorSpecified", source));
-
         if (sb.length() == 0)
             return null;
 
