@@ -43,6 +43,13 @@ public class PositionAnimator extends BasicAnimator
            throw new IllegalArgumentException(message);
         }
 
+        String message = "Creating a new Position Animator";
+        Logging.logger().info(message);
+
+        String details = "This has beginning: " + this.begin.toString()
+            + ", and end: " + this.end.toString() + "\n";
+        Logging.logger().info(details);
+
         this.begin = begin;
         this.end = end;
         this.propertyAccessor = propertyAccessor;
