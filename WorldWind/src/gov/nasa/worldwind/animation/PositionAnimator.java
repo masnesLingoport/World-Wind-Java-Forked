@@ -47,7 +47,13 @@ public class PositionAnimator extends BasicAnimator
         this.end = end;
         this.propertyAccessor = propertyAccessor;
     }
-    
+
+    public String describe()
+    {
+        String description = "This is a Position Animator";
+        return description;
+    }
+
     public void setBegin(Position begin)
     {
         this.begin = begin;
