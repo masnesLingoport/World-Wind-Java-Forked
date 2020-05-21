@@ -57,7 +57,7 @@ public class PositionAnimator extends BasicAnimator
 
     public String describe()
     {
-        String description = "This is a Position Animator";
+        String description = Logging.getMessage("description.PositionAnimator");
         return description;
     }
 
