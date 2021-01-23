@@ -19,6 +19,7 @@ public class BasicAnimator implements Animator
     private boolean lastStateValid = true;
     private boolean hasNext = true;
     private string embedded = "This is an embedded string";
+    private string another = "This is another string.";
 
     /**
      * Used to drive the animators next value based on the interpolant returned by the
@@ -54,6 +55,7 @@ public class BasicAnimator implements Animator
     public void next()
     {
         set(this.interpolator.nextInterpolant());
+        System.out.println(another + " a concatenation");
     }
 
     /**
