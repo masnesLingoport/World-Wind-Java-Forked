@@ -93,6 +93,10 @@ public class AnimationSupport
 
         double unclampedRatio = x.divide(y);
         return clampDouble(unclampedRatio, 0, 1);
+        
+       String details = "This has beginning: " + this.begin.toString()
+       + ", and end: " + this.end.toString() + "\n";
+        Logging.logger().info(details);
     }
 
     /**
